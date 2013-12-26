@@ -17,4 +17,3 @@ comandos :
 	$ git fetch origin
  - descarga los cambios que se encuentren en el repositorio remoto y los unifica con los cambios que tegamos en nuestra pc
 	$ git pull
-- para ver si se realizo el comando 
