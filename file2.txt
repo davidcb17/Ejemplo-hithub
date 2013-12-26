@@ -1,0 +1,15 @@
+comandos :
+ - para agregar cambios:
+	$ git add file3.txt
+ -para clonar un repositorio:
+	$ git clone https://github.com/codeheroco/tutorial-git.git
+ -direccion remota de nuestro repositorio  en github
+	$ git remote   
+ - para ver la direccion del repositorio remoto
+	$ git remote -v
+ -conectar tu pc local con el servidor:
+	$ git push origin master 
+  -comando para bajar los cambios el proyecto de tu repositorio
+	$ git fetch origin
+ - descarga los cambios que se encuentren en el repositorio remoto y los unifica con los cambios que tegamos en nuestra pc
+	$ git pull
