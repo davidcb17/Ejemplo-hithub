@@ -18,6 +18,15 @@ comandos :
  - descarga los cambios que se encuentren en el repositorio remoto y los unifica con los cambios que tegamos en nuestra pc
 	$ git pull
 
+-------------------------------------------------------
+-También puedes añadir la opción -v, que muestra la URL asociada a cada repositorio remoto:
+	$ git remote -v
+origin  git://github.com/schacon/ticgit.git
+----------------------------------------------------------
+
+-Si tienes más de un remoto, este comando los lista todos. Por ejemplo, mi repositorio Grit tiene esta pinta:
+	$ cd grit
+	$ git remote -v
 - para generar claves ssh para conectar tu pc a tu repositorio:
 	1.-comprobar si tienes un archivo shh en tu  pc
 	  $cd ~/.ssh
