@@ -17,3 +17,43 @@ comandos :
 	$ git fetch origin
  - descarga los cambios que se encuentren en el repositorio remoto y los unifica con los cambios que tegamos en nuestra pc
 	$ git pull
+
+- para generar claves ssh para conectar tu pc a tu repositorio:
+	*comprobar si tienes un archivo shh en tu  pc
+	  $cd ~/.ssh
+	  $ls
+	  # Lists the files in your .ssh directory
+
+	* Generar new ssh Key
+	 - $ ssh-keygen -t rsa -C "your_email@example.com"
+	 - $ ssh-add id_rsa
+
+	* agregar tu shh key a github
+	 -$ clip < ~/.ssh/id_rsa.pub
+	
+	* depues tienes que ir a 
+		https://github.com/settings/ssh
+		y pegar el codigo que se encuentra en el archivo
+			C:\Users\davidc\.ssh/id_rsa.pub 
+
+	*testear la conexion 
+	 -$ ssh -T git@github.com
+	luego te pide que te autentifiques y escribes tu contraseña de github:
+	una vez todo conforme te aparecera:
+		"Hi username! You've successfully authenticated, but GitHub does not
+		# provide shell access."
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
