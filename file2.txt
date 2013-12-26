@@ -1,6 +1,10 @@
 comandos :
  - para agregar cambios:
 	$ git add file3.txt
+ - comando para identificar los cambios hechos en el archivo
+	$ git diff --cached 
+ - para consolidad los cambios
+	$ git commit -m "Commit Inicial" 
  -para clonar un repositorio:
 	$ git clone https://github.com/codeheroco/tutorial-git.git
  -direccion remota de nuestro repositorio  en github
