@@ -1,7 +1,3 @@
-clase-de-github - en la rama mejorandola 
-===============
-
-Este es un ejemplo de Github para la comunidad de #mejorandola 
 
 Una vez instalas GIT, debes configurarlo:
 
@@ -30,7 +26,7 @@ git push origin master
 
 /************************************GIT desde 0 - Por @klinsmannf****************************************/
 
-<h3>configuración</h3>
+<h3>configuraciï¿½n</h3>
 Descarga git para OSX
 
 Descarga git para Windows
@@ -38,30 +34,30 @@ Descarga git para Windows
 Descarga git para Linux
 
 <h3>crea un repositorio nuevo</h3>
-crea un directorio nuevo, ábrelo y ejecuta
+crea un directorio nuevo, ï¿½brelo y ejecuta
 git init
 para crear un repositorio de git nuevo.
 
 <h3>hacer checkout a un repositorio</h3>
 crea una copia local del repositorio ejecutando
 git clone /path/to/repository
-al utilizar un servidor remoto, el comando será
+al utilizar un servidor remoto, el comando serï¿½
 git clone username@host:/path/to/repository
 
 <h3>flujo de trabajo</h3>
-tu repositorio local esta compuesto por tres "árboles" administrados por git. el primero es tu Directorio de trabajo el cual contiene los archivos. el segundo es el Index el cual actua como un área intermedia y finalmente el HEAD el cual apunta a el último commit realizado.
+tu repositorio local esta compuesto por tres "ï¿½rboles" administrados por git. el primero es tu Directorio de trabajo el cual contiene los archivos. el segundo es el Index el cual actua como un ï¿½rea intermedia y finalmente el HEAD el cual apunta a el ï¿½ltimo commit realizado.
 
 
 <h3>add & commit</h3>
 Puedes proponer cambios (agregarlos a el Index) usando
 git add <filename>
 git add *
-Este es el primer paso en el flujo de trabajo básico. Para en realidad hacer commit a estos cambios usa
+Este es el primer paso en el flujo de trabajo bï¿½sico. Para en realidad hacer commit a estos cambios usa
 git commit -m "Commit message"
-Ahora el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
+Ahora el archivo esta incluï¿½do en el HEAD, pero aï¿½n no en tu repositorio remoto.
 
-<h3>envío de cambios</h3>
-Tus cambios están ahora en el HEAD de tu copia local. Para enviar esos cambios a tu repositorio remoto ejecuta 
+<h3>envï¿½o de cambios</h3>
+Tus cambios estï¿½n ahora en el HEAD de tu copia local. Para enviar esos cambios a tu repositorio remoto ejecuta 
 git push origin master
 Reemplaza master por la rama a la cual desees enviar tus cambios. 
 
@@ -78,53 +74,53 @@ regresa a la rama principal
 git checkout master
 y borra la rama
 git branch -d feature_x
-una rama no está disponible para los demás a menos que subas (push) la rama a tu repositorio remoto
+una rama no estï¿½ disponible para los demï¿½s a menos que subas (push) la rama a tu repositorio remoto
 git push origin <branch>
 
 <h3>actualiza & fusiona</h3>
-para actualizar tu repositorio local al commit más nuevo, ejecuta 
+para actualizar tu repositorio local al commit mï¿½s nuevo, ejecuta 
 git pull
 en tu directorio de trabajo fetch y merge cambios remotos.
 para fusionar otra rama a tu rama activa (por ejemplo master), utiliza
 git merge <branch>
-en ambos casos git intenta auto fusionar cambios. Desafortunadamente, esto no es posible todo el tiempo y resulta en conflictos. Tú eres responsable de fusionar esos conflictos manualmente al editar los archivos mostrados por git. Luego de modificarlos, necesitas marcarlos como fusionados con
+en ambos casos git intenta auto fusionar cambios. Desafortunadamente, esto no es posible todo el tiempo y resulta en conflictos. Tï¿½ eres responsable de fusionar esos conflictos manualmente al editar los archivos mostrados por git. Luego de modificarlos, necesitas marcarlos como fusionados con
 git add <filename>
-antes de fusionar cambios, también puedes dar un vistazo previo usando
+antes de fusionar cambios, tambiï¿½n puedes dar un vistazo previo usando
 git diff <source_branch> <target_branch>
 
 <h3>etiquetas</h3>
-es recomendado crear etiquetas para cada versión publicada de un software. esto es un concepto conocido, el cual tambien existe en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando
+es recomendado crear etiquetas para cada versiï¿½n publicada de un software. esto es un concepto conocido, el cual tambien existe en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando
 git tag 1.0.0 1b2e1d63ff
 el 1b2e1d63ff se refiere a los 10 caracteres de el commit id al cual quieres referirte con tu etiqueta. Puedes obtener el commit id con 
 git log
-también puedes usar menos caracteres que el commit id, pero debe ser un valor único.
+tambiï¿½n puedes usar menos caracteres que el commit id, pero debe ser un valor ï¿½nico.
 
 <h3>reemplaza cambios locales</h3>
 En caso de que hagas algo malo (que de seguro nunca pasa ;) puedes reemplazar cambios locales usando el comando
 git checkout -- <filename>
-esto reemplaza los cambios en tu árbol de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al índice, así como también nuevos archivos, se mantendrán sin cambio.
+esto reemplaza los cambios en tu ï¿½rbol de trabajo con el ï¿½ltimo contenido de HEAD. Los cambios que ya han sido agregados al ï¿½ndice, asï¿½ como tambiï¿½n nuevos archivos, se mantendrï¿½n sin cambio.
 
-Si por otro lado quieres deshacerte de todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal de esta forma
+Si por otro lado quieres deshacerte de todos los cambios locales y commits, puedes traer la ï¿½ltima versiï¿½n del servidor y apuntar a tu copia local principal de esta forma
 git fetch origin
 git reset --hard origin/master
 
-<h3>datos útiles</h3>
-Interfaz gráfica por defecto
+<h3>datos ï¿½tiles</h3>
+Interfaz grï¿½fica por defecto
 gitk
 colores especiales para la consola
 git config color.ui true
-mostrar sólo una línea por cada commit en la traza
+mostrar sï¿½lo una lï¿½nea por cada commit en la traza
 git config format.pretty oneline
 agregar archivos de forma interactiva
 git add -i
 
 <h3>enlaces & recursos</h3>
-clientes gráficos
+clientes grï¿½ficos
 GitX (L) (OSX, open source)
 Tower (OSX)
 Source Tree (OSX, free)
 GitHub for Mac (OSX, free)
-guías
+guï¿½as
 Git Community Book
 Pro Git
 Think like a git
